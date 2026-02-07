@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Arcadian Capital Inc. | Conseil, Restructuration & Risques</title>
+  <meta name="description" content="Vérification diligente, restructuration, gestion des risques, mandats officiels, administration provisoire et liquidation." />
+
+  <!-- HARLO-inspired typography: Poppins (titles/nav) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =========================
+       ARCADIAN BRAND THEME
+       (extracted from your logo image)
+       ========================= */
+    :root{
+      --navy: #001030;         /* main background */
+      --navy2:#000a20;         /* deeper gradient */
+      --white:#f8f8f8;
+      --gold:#f8c838;
+      --gold2:#ffd24a;
+
+      --text: rgba(248,248,248,.96);
+      --muted: rgba(248,248,248,.74);
+      --line: rgba(248,248,248,.14);
+      --surface: rgba(255,255,255,.06);
+      --surface2: rgba(255,255,255,.04);
+
+      --title-font: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --body-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      --radius: 18px;
+      --shadow: 0 14px 44px rgba(0,0,0,.35);
+      --max: 1120px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: var(--body-font);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 8%, rgba(248,200,56,.10), transparent 60%),
+        radial-gradient(900px 600px at 80% 18%, rgba(248,200,56,.06), transparent 55%),
+        linear-gradient(180deg, var(--navy2), var(--navy) 55%, #000814);
+      line-height: 1.55;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 0 20px; }
+
+    /* =========================
+       HEADER / NAV (HARLO-like: clean, spaced, minimal)
+       ========================= */
+    header{
+      position: sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter: blur(10px);
+      background: rgba(0,16,48,.70);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap:16px;
+    }
